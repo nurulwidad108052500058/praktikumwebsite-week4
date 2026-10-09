@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="kalkulator">
+    <h1>Kalkulator Sederhana</h1>
+    <p class="petunjuk">Masukkan dua angka dan pilih operasi hitung.</p>
+
+    <form id="kalkulator">
+      <label for="a">Angka pertama</label>
+      <input id="a" type="number" step="any" placeholder="Contoh: 10" required>
+
+      <label for="op">Operasi hitung</label>
+      <select id="op">
+        <option value="+">Tambah (+)</option>
+        <option value="-">Kurang (−)</option>
+        <option value="*">Kali (×)</option>
+        <option value="/">Bagi (÷)</option>
+      </select>
+
+      <label for="b">Angka kedua</label>
+      <input id="b" type="number" step="any" placeholder="Contoh: 5" required>
+
+      <button id="submit" type="submit">Hitung</button>
+    </form>
+
+    <p id="hasil" class="hasil" aria-live="polite">Hasil akan muncul di sini.</p>
+  </main>
+</body>
+</html>
